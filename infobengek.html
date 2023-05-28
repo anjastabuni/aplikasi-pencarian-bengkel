@@ -41,56 +41,70 @@
     </nav>
     <!-- NAVBAR END -->
 
-    <!-- BERANDA START -->
-    <section id="home">
-      <!-- .container start-->
-      <div class="container-lg my-5">
-        <!-- .row start -->
-        <div class="row">
-          <!-- .col start -->
-          <div class="col-lg-3 col-md-12">
-            <!-- card start -->
-            <div class="card mb-3" style="max-width: 18rem">
-              <div class="card-header bg-info">Filter Data</div>
-              <form action="#" method="get">
-              <div class="card-body">
-                <h5 class="card-title">Kecamatan</h5>
-                  <select name="cars" class="form-select" id="cars">
-                    <option value="Sentani">Sentani</option>
-                    <option value="Heram">Heram</option>
-                    <option value="Abepura">Abepura</option>
-                  </select>
-                  <div class="card-footer bg-body-tertiary mt-5">
-                    <input type="reset" class="btn btn-danger d-flex justify-content-end float-end">
-                      <input type="submit" class="btn btn-primary d-flex justify-content-start ">
-                  </div>
-                </form>
-              </div>
-            </div>
-            <!-- card end -->
-          </div>
-          <!-- .col end -->
-          <!-- .col start -->
-          <div class="col-lg-9 col-md-12 d-flex justify-content-end">
-            <div class="card" style="max-width: 60rem;">
-              <div class="card-header bg-info">Peta Lokasi Bengkel</div>
-            <div class="card-body">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127538.99247173074!2d140.5586537886562!3d-2.636955284964236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x686cf5262f466cc7%3A0xae4be183bc9835dc!2sKec.%20Heram%2C%20Kota%20Jayapura%2C%20Papua!5e0!3m2!1sid!2sid!4v1685265785920!5m2!1sid!2sid" 
-              width="900" height="800" class="rounded img-fluid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            </div>
-          </div>
-          <!-- .col end -->
+    <!-- INFORMASI BENGKEL START -->
+    <section class="bg-body-tertiary">
+      <div class="container-lg py-5">
+        <div>
+          <form action="#" method="get" class="float-end">
+            <input type="search" class="form-control" placeholder="Pencarian.." />
+          </form>
+          <h2>Informasi Bengkel</h2>
         </div>
-        <!-- .row end -->
+        <!-- .card bengkel start -->
+        <div class="py-3">
+          <!-- table start -->
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Bengkel</th>
+                <th scope="col">Jam</th>
+                <th scope="col">Kecamatan</th>
+                <th scope="col">Telp</th>
+                <th scope="col">Fasilitas</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>pagi 6:00 s/d sore 16:00</td>
+                <td>Harapan</td>
+                <td>081313131313</td>
+                <td>
+                  <ul>
+                    <li>Jual Beli Aki</li>
+                    <li>Tambal Ban</li>
+                    <li>Servis Ringan</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Mark</td>
+                <td>pagi 6:00 s/d sore 16:00</td>
+                <td>Harapan</td>
+                <td>081313131313</td>
+                <td>
+                  <ul>
+                    <li>Ganti Oli</li>
+                    <li>Tambal Ban</li>
+                    <li>Servis Ringan</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- table end -->
+        </div>
+        <!-- .card bengkel end -->
       </div>
-      <!-- .container end-->
     </section>
-    <!-- BERANDA END -->
+    <!-- INFORMASI BENGKEL END-->
 
     <!-- FOOTER START -->
-    <footer class="bg-dark text-white mt-5">
-      <div class="container-lg py-2 ">
+    <footer class="bg-dark text-white">
+      <div class="container-lg py-2">
         <!-- .row start -->
         <div class="row">
           <!-- .col start -->
